@@ -60,7 +60,7 @@ Je possède le permis B et une voiture.</p>
   <p className="text-3xl text-cyan-400 absolute top-[15px]">Hobbys</p>
   <img className="absolute top-[4px] left-[910px] w-[69px] h-[69px]" src={hobby}></img>
   <hr className=" w-full border-blue-500 absolute top-[80px] left-0"></hr>
-  <img className="absolute top-[100px] left-[20px] w-[135px] h-[135px]" src={jdr}></img>
+  <Link to="/jdr"><img className="absolute top-[100px] left-[20px] w-[135px] h-[135px]" src={jdr}></img></Link>
   <p className="text-xl absolute left-[70px] top-[250px] ">JDR</p>
   <img className="absolute top-[100px] left-[210px] w-[135px] h-[135px]" src={jv}></img>
   <p className="text-xl absolute left-[220px] top-[250px] ">Jeux vidéo</p>

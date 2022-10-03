@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "LancelotRegular";
+    src: local("LancelotRegular"),
+      url("./Lancelot-Regular.ttf") format("truetype");
+    font-weight: normal;
+  }
+
+  .jdr{
+    font-family: LancelotRegular
+  }
