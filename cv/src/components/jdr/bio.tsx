@@ -33,7 +33,7 @@ function BioJDR() {
             <Link to="/competence/jdr/"><p className="absolute top-[670px] left-[100px] text-3xl text-white ">Compétence</p></Link>
             <Link to="/experience/jdr/"><p className="absolute top-[750px] left-[100px] text-3xl text-white ">Formations &<br></br> expériences</p></Link>
             {/* <Link to="/portfolio"><p className="absolute top-[850px] left-[100px] text-3xl text-white ">Portfolio</p></Link> */}
-            <Link to="bio/jdr/eng"><p className="absolute top-[850px] left-[160px] text-xl text-white ">English version</p></Link>
+            <Link to="/bio/jdr/eng"><p className="absolute top-[850px] left-[160px] text-xl text-white ">English version</p></Link>
         </div>
        <div className="absolute  left-[550px] top-[150px] w-[650px] h-[550px] pl-6 pr-6 rounded-lg  " >
          <img className=" h-[550px] w-full absolute -left-[40px] -top-[15px]" src={fondbox}></img>
@@ -67,13 +67,13 @@ Je possède le permis B et une voiture.</p>
   <img className="absolute top-[4px] left-[910px] w-[69px] h-[69px]" src={hobby}></img>
   <img className="absolute top-[100px] left-[20px] w-[135px] h-[135px]" src={jdr}></img>
   <p className="text-xl absolute left-[70px] top-[250px] ">JDR</p>
-  <img className="absolute top-[100px] left-[210px] w-[135px] h-[135px]" src={jv}></img>
+  <Link to="/jv"><img className="absolute top-[100px] left-[210px] w-[135px] h-[135px]" src={jv}></img></Link>
   <p className="text-xl absolute left-[220px] top-[250px] ">Jeux vidéo</p>
   <img className="absolute top-[100px] left-[400px] w-[135px] h-[135px]" src={livre}></img>
   <p className="text-xl absolute left-[440px] top-[250px] ">Lecture</p>
   <img className="absolute top-[100px] left-[590px] w-[135px] h-[135px]" src={anime}></img>
   <p className="text-xl absolute left-[630px] top-[250px] ">Anime</p>
-  <img className="absolute top-[100px] left-[780px] w-[135px] h-[135px]" src={dev}></img>
+  <Link to="/"><img className="absolute top-[100px] left-[780px] w-[135px] h-[135px]" src={dev}></img></Link>
   <p className="text-xl absolute left-[820px] top-[250px] ">Dev</p>
   </div>
 </div>

@@ -62,13 +62,13 @@ Je possède le permis B et une voiture.</p>
   <hr className=" w-full border-blue-500 absolute top-[80px] left-0"></hr>
   <Link to="/jdr"><img className="absolute top-[100px] left-[20px] w-[135px] h-[135px]" src={jdr}></img></Link>
   <p className="text-xl absolute left-[70px] top-[250px] ">JDR</p>
-  <img className="absolute top-[100px] left-[210px] w-[135px] h-[135px]" src={jv}></img>
+  <Link to="/jv"><img className="absolute top-[100px] left-[210px] w-[135px] h-[135px]" src={jv}></img></Link>
   <p className="text-xl absolute left-[220px] top-[250px] ">Jeux vidéo</p>
   <img className="absolute top-[100px] left-[400px] w-[135px] h-[135px]" src={livre}></img>
   <p className="text-xl absolute left-[440px] top-[250px] ">Lecture</p>
   <img className="absolute top-[100px] left-[590px] w-[135px] h-[135px]" src={anime}></img>
   <p className="text-xl absolute left-[630px] top-[250px] ">Anime</p>
-  <img className="absolute top-[100px] left-[780px] w-[135px] h-[135px]" src={dev}></img>
+  <Link to="/"><img className="absolute top-[100px] left-[780px] w-[135px] h-[135px]" src={dev}></img></Link>
   <p className="text-xl absolute left-[820px] top-[250px] ">Dev</p>
   </div>
 </div>

@@ -34,7 +34,7 @@ function BioJDReng() {
             <Link to="/competence/jdr/eng"><p className="absolute top-[670px] left-[100px] text-3xl text-white ">Skills</p></Link>
             <Link to="/experience/jdr/eng"><p className="absolute top-[750px] left-[100px] text-3xl text-white ">Qualifiation &<br></br> experiences</p></Link>
             {/* <Link to="/portfolio"><p className="absolute top-[850px] left-[100px] text-3xl text-white ">Portfolio</p></Link> */}
-            <Link to="/jdr"><p className="absolute top-[850px] left-[160px] text-xl text-white ">French version</p></Link>
+            <Link to="/bio/jdr"><p className="absolute top-[850px] left-[160px] text-xl text-white ">French version</p></Link>
         </div>
 
         <div className="absolute  left-[550px] top-[150px] w-[650px] h-[550px] pl-6 pr-6 rounded-lg  " >
@@ -69,13 +69,13 @@ I have a driver's license and a car.
         <img className="absolute top-[4px] left-[910px] w-[69px] h-[69px]" src={hobby}></img>
         <img className="absolute top-[100px] left-[20px] w-[135px] h-[135px]" src={jdr}></img>
         <p className="text-xl absolute left-[70px] top-[250px] ">RPG</p>
-        <img className="absolute top-[100px] left-[210px] w-[135px] h-[135px]" src={jv}></img>
+        <Link to="/jv/eng"><img className="absolute top-[100px] left-[210px] w-[135px] h-[135px]" src={jv}></img></Link>
         <p className="text-xl absolute left-[220px] top-[250px] ">Videogames</p>
         <img className="absolute top-[100px] left-[400px] w-[135px] h-[135px]" src={livre}></img>
         <p className="text-xl absolute left-[440px] top-[250px] ">Read</p>
         <img className="absolute top-[100px] left-[590px] w-[135px] h-[135px]" src={anime}></img>
         <p className="text-xl absolute left-[630px] top-[250px] ">Anime</p>
-        <img className="absolute top-[100px] left-[780px] w-[135px] h-[135px]" src={dev}></img>
+        <Link to="/eng"><img className="absolute top-[100px] left-[780px] w-[135px] h-[135px]" src={dev}></img></Link>
         <p className="text-xl absolute left-[820px] top-[250px] ">Dev</p>
         </div>
       </div>

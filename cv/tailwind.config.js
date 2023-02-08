@@ -10,6 +10,7 @@ module.exports = {
       // => @media (min-width: 640px) { ... }
       'aie': '1900px',
       // => @media (min-width: 640px) { ... }
+      '2k': '2560px',
       'oui': '1500px'
       // => @media (min-width: 640px) { ... }
     }

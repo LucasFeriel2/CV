@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "PressStart2PRegular";
+    src: local("PressStart2PRegular"),
+      url("./PressStart2P-Regular.ttf") format("truetype");
+    font-weight: normal;
+  }
+
+  .jv{
+    font-family: PressStart2PRegular
+  }

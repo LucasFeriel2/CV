@@ -15,7 +15,12 @@ import CompétenceJDR from "./components/jdr/competence.tsx";
 import CompétenceJDReng from "./components/jdr/competenceeng.tsx";
 import FormationJDR from "./components/jdr/formation.tsx";
 import FormationJDReng from "./components/jdr/formationeng.tsx";
-
+import IndexJV from "./components/jv/index.tsx";
+import IndexJVeng from "./components/jv/indexeng.tsx";
+import BioJV from "./components/jv/bio.tsx";
+import BioJVeng from "./components/jv/bioeng.tsx";
+import CompetenceJV from "./components/jv/competence.tsx";
+import CompetenceJVeng from "./components/jv/competenceeng.tsx";
 
 export default function App() {
   return (
@@ -38,7 +43,12 @@ export default function App() {
           <Route path="competence/jdr/eng" element={<CompétenceJDReng />} />
           <Route path="experience/jdr/" element={<FormationJDR />} />
           <Route path="experience/jdr/eng" element={<FormationJDReng />} />
-
+          <Route path="/jv" element={<IndexJV />} />
+          <Route path="/jv/eng" element={<IndexJVeng />} />
+          <Route path="bio/jv/" element={<BioJV />} />
+          <Route path="bio/jv/eng" element={<BioJVeng />} />
+          <Route path="competence/jv/" element={<CompetenceJV />} />
+          <Route path="competence/jv/eng" element={<CompetenceJVeng />} />
 
         </Routes>
   </Router>

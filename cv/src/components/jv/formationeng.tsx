@@ -1,31 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import perso from "../img/rogue.png"
-import entreprise from "../img/entreprisejdr.png"
-import diplome from "../img/diplomejdr.png"
-import fondbox from "../img/divbio.png"
-import fondjdr from "../img/fondjdr.jpg"
-import nav from "../img/navjdr.png"
+import perso from "../img/normal.png"
+import entreprise from "../img/entreprise.png"
+import diplome from "../img/diplome.png"
 
-function FormationJDReng() {
+
+function Formationeng() {
   
     return (
-        <div className='jdr absolute left-0 top-0 w-full h-full overflow-x-auto  ' style={{ backgroundImage: `url(${fondjdr})` }}>
-        <div className="h-[1085px] w-[500px] ">
-            <img className="absolute top-0 left-[10px] h-[1085px] w-[500px]" src={nav}></img>
-            <img className="absolute top-[150px] left-[150px] w-[188px] h-[183px]" src={perso}></img>
-            <p className="absolute top-[350px] left-[130px] text-5xl text-[#00F0FF] test">Lucas FERIEL</p>
-            <Link to="/jdr/eng"><p className="absolute top-[470px] left-[100px] text-3xl text-white ">Home</p></Link>
-            <Link to="/bio/jdr/eng"><p className="absolute top-[570px] left-[100px] text-3xl text-white ">Bio</p></Link>
-            <Link to="/competence/jdr/eng"><p className="absolute top-[670px] left-[100px] text-3xl text-white ">Skills</p></Link>
-            <Link to="/experience/jdr/eng"><p className="absolute top-[750px] left-[100px] text-3xl text-white ">Qualifiation &<br></br> experiences</p></Link>
-            {/* <Link to="/portfolio"><p className="absolute top-[850px] left-[100px] text-3xl text-white ">Portfolio</p></Link> */}
-            <Link to="/experience/jdr"><p className="absolute top-[850px] left-[160px] text-xl text-white ">French version</p></Link>
-        </div>
-        <div className="absolute left-[550px] top-[120px] w-[720px] h-[950px]  pl-4 pr-6 rounded-lg">
-            <img className=" h-full w-full absolute -left-[60px] -top-[50px]" src={fondbox}></img>
-            <p className="text-3xl text-red-500 absolute top-[15px]">Qualifications</p>
-            <img className="absolute top-[4px] right-[150px] w-[69px] h-[69px]" src={diplome}></img>
+      <div className='absolute left-0 top-0 w-full h-full overflow-x-auto bg-black  '>
+       <div className="h-[1085px] w-[500px] bg-blue-600/50">
+          <img className="absolute top-[100px] left-[150px] w-[188px] h-[183px]" src={perso}></img>
+          <p className="absolute top-[300px] left-[120px] text-5xl text-white ">Lucas FERIEL</p>
+          <Link to="/eng"><p className="absolute top-[420px] left-[100px] text-3xl text-white ">Home</p></Link>
+          <Link to="/bio/eng"><p className="absolute top-[520px] left-[100px] text-3xl text-white ">Bio</p></Link>
+          <Link to="/competence/eng"><p className="absolute top-[620px] left-[100px] text-3xl text-white ">Skills</p></Link>
+          <Link to="/experience/eng"><p className="absolute top-[700px] left-[100px] text-3xl text-white ">Qualifications &<br></br> experiences</p></Link>
+          {/* <Link to="/portfolio/eng"><p className="absolute top-[850px] left-[100px] text-3xl text-white ">Portfolio</p></Link> */}
+          <Link to="/experience"><p className="absolute top-[1000px] left-[160px] text-xl text-white ">French version</p></Link>
+      </div>
+        <div className="absolute left-[550px] top-[120px] w-[630px] h-[850px] border-4  shadow-2xl pl-4 pr-6 rounded-lg bg-zinc-200 border-sky-300 shadow-sky-500">
+            <p className="text-3xl text-cyan-400 absolute top-[15px]">Qualifications</p>
+            <img className="absolute top-[4px] right-[15px] w-[69px] h-[69px]" src={diplome}></img>
+            <hr className=" w-full border-blue-500 absolute top-[80px] left-0"></hr>
             <div className=" absolute top-[100px] left-[15px]"> 
                 <p className="text-[#5000ff]  text-2xl ">BACCALAURÉAT STI2D Option SIN (Assez bien)</p>
                 <p className="text-[#FF0000]  text-xl ">Lycée Germaine Tillon, Montbéliard - 2016/2018</p>
@@ -38,28 +35,28 @@ function FormationJDReng() {
                 <p className="text-base pl-5 ">- Programming in Python and C language</p>
             </div>
             <div className=" absolute top-[340px] left-[15px]"> 
-                <p className="text-[#5000ff]  text-2xl ">LICENCE PROFESSIONNELLE in Automated systems, networks <br></br> and industrial computing</p>
+                <p className="text-[#5000ff]  text-2xl ">LICENCE PROFESSIONNELLE in Automated systems, networks and industrial computing</p>
                 <p className="text-[#FF0000]  text-xl ">IUT Nancy Brabois, Nancy - 2020/2021</p>
                 <p className="text-base pl-5 ">- Network : Learning of the different industrial networks and the network in general</p>
                 <p className="text-base pl-5 ">- Automation : Supervision and realization of PLC program (Wago and Siemens)</p>
                 <p className="text-base pl-5 ">- Computer science : C# programming and database</p>
             </div>
             <div className=" absolute top-[540px] left-[15px]"> 
-                <p className="text-[#5000ff]  text-2xl ">Prépa Master pour Software Architect, <br></br>Application Developer (Pre-MSc)</p>
+                <p className="text-[#5000ff]  text-2xl ">Prépa Master pour Software Architect, Application Developer (Pre-MSc)</p>
                 <p className="text-[#FF0000]  text-xl ">Epitech,  Nancy - 2021/2022</p>
                 <p className="text-base pl-5 ">- DevOps : Implementation of linux and VM systems and Docker</p>
                 <p className="text-base pl-5 ">- Web : HTML, CSS and JS deepening. Learning React, ReactNative, Angular and Symfony</p>
                 <p className="text-base pl-5 ">- Programming: Learning Java</p>
             </div>
             <div className=" absolute top-[735px] left-[15px]"> 
-                <p className="text-[#5000ff]  text-2xl ">Master MSc Software Architect, Application Developer</p>
+                <p className="text-[#5000ff]  text-2xl ">Master MSc Architecte Logiciel, Dévellopeur d'application</p>
                 <p className="text-[#FF0000]  text-xl ">Epitech,  Nancy - 2022/2024</p>
             </div>
         </div>
-        <div className="absolute left-[1300px] top-[120px] w-[750px] h-[950px] pl-4 pr-6 rounded-lg ">
-            <img className=" h-full w-full absolute -left-[60px] -top-[50px]" src={fondbox}></img>
-            <p className="text-3xl text-red-500 absolute top-[15px]">Experiences</p>
-            <img className="absolute top-[4px] right-[150px] w-[69px] h-[69px]" src={entreprise}></img>
+        <div className="absolute left-[1250px] top-[120px] w-[630px] h-[850px] border-4  shadow-2xl pl-4 pr-6 rounded-lg bg-zinc-200 border-sky-300 shadow-sky-500">
+            <p className="text-3xl text-cyan-400 absolute top-[15px]">Experiences</p>
+            <img className="absolute top-[4px] right-[15px] w-[69px] h-[69px]" src={entreprise}></img>
+            <hr className=" w-full border-blue-500 absolute top-[80px] left-0"></hr>
             <div className=" absolute top-[100px] left-[15px]"> 
                 <p className="text-[#5000ff]  text-2xl ">Web Designer - Akiba Station, Grand Est</p>
                 <p className="text-[#FF0000]  text-xl ">Technical internship for website update and maintenance - 2019</p>
@@ -85,7 +82,7 @@ function FormationJDReng() {
     );
   }
   
-  export default FormationJDReng;
+  export default Formationeng;
   
 
   

@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import perso from "../img/ranger.png"
+import perso from "../img/normal.png"
 import apropos from "../img/apropos.png"
-import skill from "../img/skilljdr.png"
+import skill from "../img/skill.png"
 import reseau from "../img/reseau.png"
 import ecrit from "../img/ecrit.png"
 import domo from "../img/domo.png"
 import atom from "../img/atom.png"
 import eng from "../img/eng.png"
 import esp from "../img/esp.png"
-import lang from "../img/xpjdr.png"
+import lang from "../img/lang.png"
 import html from "../img/html.png"
 import css from "../img/css.png"
 import js from "../img/js.png"
@@ -22,30 +22,26 @@ import bs from "../img/bootstrap.png"
 import c from "../img/c.png"
 import batch from "../img/batch.png"
 import power from "../img/power.png"
-import fondbox from "../img/divbio.png"
-import fondjdr from "../img/fondjdr.jpg"
-import nav from "../img/navjdr.png"
 
 
-function CompetenceJDReng() {
+function CompetenceJVeng() {
   
     return (
-      <div className='jdr absolute left-0 top-0 w-full h-full overflow-x-auto  ' style={{ backgroundImage: `url(${fondjdr})` }}>
-        <div className="h-[1085px] w-[500px] ">
-            <img className="absolute top-0 left-[10px] h-[1085px] w-[500px]" src={nav}></img>
-            <img className="absolute top-[150px] left-[150px] w-[188px] h-[183px]" src={perso}></img>
-            <p className="absolute top-[350px] left-[130px] text-5xl text-[#00F0FF] test">Lucas FERIEL</p>
-            <Link to="/jdr/eng"><p className="absolute top-[470px] left-[100px] text-3xl text-white ">Home</p></Link>
-            <Link to="/bio/jdr/eng"><p className="absolute top-[570px] left-[100px] text-3xl text-white ">Bio</p></Link>
-            <Link to="/competence/jdr/eng"><p className="absolute top-[670px] left-[100px] text-3xl text-white ">Skills</p></Link>
-            <Link to="/experience/jdr/eng"><p className="absolute top-[750px] left-[100px] text-3xl text-white ">Qualifiation &<br></br> experiences</p></Link>
-            {/* <Link to="/portfolio"><p className="absolute top-[850px] left-[100px] text-3xl text-white ">Portfolio</p></Link> */}
-            <Link to="/competence/jdr"><p className="absolute top-[850px] left-[160px] text-xl text-white ">French version</p></Link>
-        </div>
-        <div className="absolute left-[550px] top-[120px] w-[480px] h-[950px]  pl-4 pr-6 rounded-lg ">
-            <img className=" h-full w-full absolute -left-[40px] -top-[50px]" src={fondbox}></img>
-            <p className="text-3xl text-red-500 absolute top-[15px]">General</p>
+      <div className='absolute left-0 top-0 w-full h-full overflow-x-auto bg-black  '>
+        <div className="h-[1085px] w-[500px] bg-blue-600/50">
+          <img className="absolute top-[100px] left-[150px] w-[188px] h-[183px]" src={perso}></img>
+          <p className="absolute top-[300px] left-[120px] text-5xl text-white ">Lucas FERIEL</p>
+          <Link to="/eng"><p className="absolute top-[420px] left-[100px] text-3xl text-white ">Home</p></Link>
+          <Link to="/bio/eng"><p className="absolute top-[520px] left-[100px] text-3xl text-white ">Bio</p></Link>
+          <Link to="/competence/eng"><p className="absolute top-[620px] left-[100px] text-3xl text-white ">Skills</p></Link>
+          <Link to="/experience/eng"><p className="absolute top-[700px] left-[100px] text-3xl text-white ">Qualifications &<br></br> experiences</p></Link>
+          {/* <Link to="/portfolio/eng"><p className="absolute top-[850px] left-[100px] text-3xl text-white ">Portfolio</p></Link> */}
+          <Link to="/competence"><p className="absolute top-[1000px] left-[160px] text-xl text-white ">French version</p></Link>
+      </div>
+        <div className="absolute left-[550px] top-[120px] w-[400px] h-[850px] border-4  shadow-2xl pl-4 pr-6 rounded-lg bg-zinc-200 border-sky-300 shadow-sky-500">
+            <p className="text-3xl text-cyan-400 absolute top-[15px]">General</p>
             <img className="absolute top-[4px] left-[320px] w-[69px] h-[69px]" src={skill}></img>
+            <hr className=" w-full border-blue-500 absolute top-[80px] left-0"></hr>
             <img className="absolute top-[100px] left-[10px] w-[90px] h-[90px]" src={reseau}></img>
             <p className="absolute top-[120px] left-[130px] text-2xl">Network Knowledge</p>
             <img className="absolute top-[210px] left-[10px] w-[90px] h-[90px]" src={ecrit}></img>
@@ -59,10 +55,10 @@ function CompetenceJDReng() {
             <img className="absolute top-[730px] left-[10px] w-[90px] h-[90px]" src={esp}></img>
             <p className="absolute top-[750px] left-[130px] text-2xl">Spanish level B1</p>
         </div>
-        <div className="absolute left-[1100px] top-[120px] w-[1000px] h-[950px] pl-4 pr-6 rounded-lg ">
-            <img className=" h-full w-full absolute -left-[80px] -top-[50px]" src={fondbox}></img>
-            <p className="text-3xl text-red-500 absolute top-[15px]">Computer languages</p>
-            <img className="absolute top-[4px] right-[210px] w-[69px] h-[69px]" src={lang}></img>
+        <div className="absolute left-[1000px] top-[120px] w-[840px] h-[850px] border-4  shadow-2xl pl-4 pr-6 rounded-lg bg-zinc-200 border-sky-300 shadow-sky-500">
+            <p className="text-3xl text-cyan-400 absolute top-[15px]">Computer languages</p>
+            <img className="absolute top-[4px] right-[10px] w-[69px] h-[69px]" src={lang}></img>
+            <hr className=" w-full border-blue-500 absolute top-[80px] left-0"></hr>
             <img className="absolute top-[100px] left-[15px] w-[90px] h-[90px]" src={html}></img>
             <p className="absolute top-[100px] left-[220px] text-2xl">HTML</p>
             <div className="absolute top-[130px] left-[130px] w-[250px] bg-gray-500 shadow  bg-grey-light mt-2">
@@ -131,7 +127,7 @@ function CompetenceJDReng() {
     );
   }
   
-  export default CompetenceJDReng;
+  export default CompetenceJVeng;
   
 
   
