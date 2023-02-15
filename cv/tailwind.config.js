@@ -3,17 +3,9 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
+  plugins: [require("daisyui")],
   theme: {
     extend: {},
-    screens: {
-      'pc': '1366px',
-      // => @media (min-width: 640px) { ... }
-      'aie': '1900px',
-      // => @media (min-width: 640px) { ... }
-      '2k': '2560px',
-      'oui': '1500px'
-      // => @media (min-width: 640px) { ... }
-    }
+    
   },
-  plugins: [],
 }

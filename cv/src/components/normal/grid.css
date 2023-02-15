@@ -1,12 +1,6 @@
-.parent {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    position: relative;
-    }
-    
-    .div1 { grid-area: 1 / 1 / 6 / 13; }
-    .div2 { grid-area: 1 / 1 / 6 / 4; }
-    .div3 { grid-area: 2 / 6 / 5 / 11; }
+.bg-responsive {
+    background-image: url('../img/indexbg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+  }
