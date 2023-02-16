@@ -19,67 +19,87 @@ import fondjdr from "../img/fondjdr.jpg"
 import nav from "../img/navjdr.png"
 import fondbox from "../img/divbio.png"
 import fondhobby from "../img/divhobby.png"
+import Navbar from "./navbareng";
 
 
 function BioJDReng() {
   
     return (
-      <div className='jdr absolute left-0 top-0 w-full h-full overflow-x-auto  ' style={{ backgroundImage: `url(${fondjdr})` }}>
-        <div className="h-[1085px] w-[500px] ">
-            <img className="absolute top-0 left-[10px] h-[1085px] w-[500px]" src={nav}></img>
-            <img className="absolute top-[150px] left-[150px] w-[188px] h-[183px]" src={perso}></img>
-            <p className="absolute top-[350px] left-[130px] text-5xl text-[#00F0FF] test">Lucas FERIEL</p>
-            <Link to="/jdr/eng"><p className="absolute top-[470px] left-[100px] text-3xl text-white ">Home</p></Link>
-            <Link to="/bio/jdr/eng"><p className="absolute top-[570px] left-[100px] text-3xl text-white ">Bio</p></Link>
-            <Link to="/competence/jdr/eng"><p className="absolute top-[670px] left-[100px] text-3xl text-white ">Skills</p></Link>
-            <Link to="/experience/jdr/eng"><p className="absolute top-[750px] left-[100px] text-3xl text-white ">Qualifiation &<br></br> experiences</p></Link>
-            {/* <Link to="/portfolio"><p className="absolute top-[850px] left-[100px] text-3xl text-white ">Portfolio</p></Link> */}
-            <Link to="/bio/jdr"><p className="absolute top-[850px] left-[160px] text-xl text-white ">French version</p></Link>
+      <div className="flex items-center flex-wrap  justify-start h-screen bg-cover bg-center  bg-responsivejdr jdr bg-repeat sm:bg-auto md:bg-cover lg:bg-contain overflow-x-auto">
+      <Navbar mage={perso}></Navbar><br></br><br></br>
+        <div className="relative bg-boxjdr   sm:max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto mt-8 p-4 sm:p-6  rounded-lg">
+          <div className="relative mb-8">
+            <p className="text-3xl text-red-500 pt-8">About me</p>
+            <img className="absolute top-5 right-0 w-16 h-16" src={apropos} />
+          </div>
+          <hr className="w-full border-blue-500" /><br></br>
+          <p className="mx-auto max-w-md w-auto text-xl ">
+            Interested in computers for a long time, I decided to make my job. Indeed, since my youngest age, I use computers for my free time.<br></br>
+            It's been two years now that I've oriented myself in the voice of Web Development, starting as an autodidact and then enrolling in the school Epitech in order to improve myself in this field. <br></br>
+            There, I started a passion for the Dev and for the AI, that's why I wish to perform in these two domains in order to live later.<br></br>
+            Curious, passionate and serious are the words that best describe me.<br></br>
+            I have a driver's license and a car.
+          </p><br></br>
         </div>
-
-        <div className="absolute  left-[550px] top-[150px] w-[650px] h-[550px] pl-6 pr-6 rounded-lg  " >
-         <img className=" h-[550px] w-full absolute -left-[40px] -top-[15px]" src={fondbox}></img>
-         <p className="text-3xl text-red-500 absolute top-[35px]">About me</p>
-         <img className="absolute top-[15px] right-[100px] w-[69px] h-[69px]" src={apropos}></img>
-            <p className="absolute top-[90px] w-[500px] text-2xl">Interested in computers for a long time, I decided to make my job. Indeed, since my youngest age, I use computers for my free time.
-It's been two years now that I've oriented myself in the way of Web Development, starting as an autodidact and then enrolling in the school Epitech in order to improve myself in this field. There, I started a passion for the Dev and for the AI, that's why I wish to perform in these two domains in order to live later.
-Curious, passionate and serious are the words that best describe me.
-I have a driver's license and a car.
-
-</p>
+        <div className="relative bg-boxjdr sm:max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto mt-8 p-4 sm:p-6  rounded-lg">
+          <div className="relative mb-8">
+            <p className="text-3xl text-red-500 pt-8">Contact me</p>
+            <img className="absolute top-5 right-0 w-16 h-16" src={contact} />
+          </div>
+          <hr className="w-full border-blue-500" /><br></br>
+            <div className="flex flex-row  items-center mb-6">
+              <img className="w-16 h-16 mr-6" src={map} />
+              <p className="text-lg">
+                18 rue du Dauphiné<br />
+                54500 Vandoeuvre-lès-Nancy
+              </p>
+            </div>
+            <div className="flex flex-row  items-center mb-6">
+              <img className="w-16 h-16 mr-6" src={tel} />
+              <p className="text-xl">07 68 52 36 32</p>
+            </div>
+            <div className="flex  flex-row items-center mb-6">
+              <img className="w-16 h-16 mr-6" src={lk} />
+              <p className="text-xl">@lucasferiel</p>
+            </div>
+            <div className="flex flex-row items-center mb-6">
+              <img className="w-16 h-16 mr-6" src={discord} />
+              <p className="text-xl">Lugras#5416</p>
+            </div>
+            <div className="flex flex-row items-center mb-6">
+              <img className="w-16 h-16 mr-6" src={mail} />
+              <p className="text-xl">lucasferiel@hotmail.fr</p>
+            </div>
         </div>
-        <div className=" jdr absolute left-[1250px] top-[150px] w-[603px] h-[550px] pl-4 pr-6  " >
-          <img className=" h-[550px] w-full absolute -left-[40px] -top-[15px]" src={fondbox}></img>
-          <p className="text-3xl text-red-500 absolute top-[40px]">Contact me</p>
-          <img className="absolute top-[35px] right-[110px] w-[69px] h-[69px]" src={contact}></img>
-          <img className="absolute top-[80px] left-[30px] w-[63px] h-[63px]" src={map}></img>
-          <p className="text-xl absolute left-[130px] top-[80px] ">18 rue du Dauphiné<br></br>54500 Vandoeuvre-lès-Nancy</p>
-          <img className="absolute top-[160px] left-[30px] w-[63px] h-[63px]" src={tel}></img>
-          <p className="text-xl absolute left-[130px] top-[170px] ">07 68 52 36 32</p>
-          <img className="absolute top-[240px] left-[30px] w-[63px] h-[63px]" src={lk}></img>
-          <p className="text-xl absolute left-[130px] top-[260px] ">@lucasferiel</p>
-          <img className="absolute top-[320px] left-[30px] w-[63px] h-[63px]" src={discord}></img>
-          <p className="text-xl absolute left-[130px] top-[350px] ">SquareAno#5416</p>
-          <img className="absolute top-[400px] left-[30px] w-[63px] h-[63px]" src={mail}></img>
-          <p className="text-xl absolute left-[130px] top-[430px] ">lucasferiel@hotmail.fr</p>
-      </div>
-        <div className="absolute left-[700px] top-[750px] w-[1200px] h-[300px]  pl-4 pr-6 rounded-lg">
-        <img className=" h-[350px] w-[1300px] absolute -left-[100px] -top-[25px]" src={fondhobby}></img>
-        <p className="text-3xl text-red-500 absolute top-[15px]">Hobbies</p>
-        <img className="absolute top-[4px] left-[910px] w-[69px] h-[69px]" src={hobby}></img>
-        <img className="absolute top-[100px] left-[20px] w-[135px] h-[135px]" src={jdr}></img>
-        <p className="text-xl absolute left-[70px] top-[250px] ">RPG</p>
-        <Link to="/jv/eng"><img className="absolute top-[100px] left-[210px] w-[135px] h-[135px]" src={jv}></img></Link>
-        <p className="text-xl absolute left-[220px] top-[250px] ">Videogames</p>
-        <img className="absolute top-[100px] left-[400px] w-[135px] h-[135px]" src={livre}></img>
-        <p className="text-xl absolute left-[440px] top-[250px] ">Read</p>
-        <img className="absolute top-[100px] left-[590px] w-[135px] h-[135px]" src={anime}></img>
-        <p className="text-xl absolute left-[630px] top-[250px] ">Anime</p>
-        <Link to="/eng"><img className="absolute top-[100px] left-[780px] w-[135px] h-[135px]" src={dev}></img></Link>
-        <p className="text-xl absolute left-[820px] top-[250px] ">Dev</p>
-        </div>
-      </div>
-
+        <div className="relative sm:max-w-2xl bg-boxjdr md:max-w-3xl lg:max-w-4xl mx-auto mt-8 p-4 sm:p-6 rounded-lg">
+          <div className="relative mb-8">
+            <p className="text-3xl text-red-500 pt-8">Hobbies</p>
+            <img className="absolute top-5 right-0 w-16 h-16" src={hobby} />
+          </div>
+          <hr className="w-full border-blue-500" /><br></br>
+            <div className="flex flex-row  items-center mb-6">
+            <Link to="/jdr"><img className="w-16 h-16 mr-6" src={jdr} /></Link>
+              <p className="text-xl">RPG</p>
+            </div>
+            <div className="flex flex-row  items-center mb-6">
+            <Link to="/jv/eng"><img className="w-16 h-16 mr-6" src={jv} /></Link>
+              <p className="text-xl">Video games</p>
+            </div>
+            <div className="flex  flex-row items-center mb-6">
+              <img className="w-16 h-16 mr-6" src={livre} />
+              <p className="text-xl">Read</p>
+            </div>
+            <div className="flex  flex-row items-center mb-6">
+              <img className="w-16 h-16 mr-6" src={anime} />
+              <p className="text-xl">Anime</p>
+            </div>
+            <div className="flex  flex-row items-center mb-6">
+            <Link to="/eng"><img className="w-16 h-16 mr-6" src={dev} /></Link>
+              <p className="text-xl">Dev</p>
+            </div>  
+          </div>
+        
+    </div>
       
     );
   }

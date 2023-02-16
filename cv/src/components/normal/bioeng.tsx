@@ -79,7 +79,7 @@ function Bio() {
                 <p className="text-lg">RPG</p>
               </div>
               <div className="flex flex-row  items-center mb-6">
-                <img className="w-16 h-16 mr-6" src={jv} />
+              <Link to="/jv/eng"><img className="w-16 h-16 mr-6" src={jv} /></Link>
                 <p className="text-xl">Video games</p>
               </div>
               <div className="flex  flex-row items-center mb-6">

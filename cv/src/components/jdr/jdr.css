@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: "LancelotRegular";
     src: local("LancelotRegular"),
@@ -8,3 +9,37 @@
   .jdr{
     font-family: LancelotRegular
   }
+
+  .bg-responsivejdr {
+    background-image: url('../img/bgjdr.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+  }
+
+  .bg-navjdr {
+    background-image: url('../img/navjdr.png');
+    background-size: cover;
+    background-repeat: repeat;
+  }
+
+  .bg-navfulljdr {
+    background-image: url('https://i.imgur.com/nLMBiy2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    box-shadow: 0px 5px 5px #888888;
+  }
+  .bg-boxjdr {
+    background-image: url('../img/divbio.png');
+    background-size: cover;
+    background-position: center;
+  }
+  .bg-boxhobbyjdr {
+    background-image: url('../img/divhobby.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+
+

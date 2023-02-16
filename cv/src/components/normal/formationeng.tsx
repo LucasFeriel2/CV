@@ -12,7 +12,7 @@ function Formationeng() {
             <Navbar></Navbar><br></br><br></br>
             <div className="relative  sm:max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto mt-8 p-4 sm:p-6 bg-zinc-200 border-4 border-sky-300 shadow-2xl shadow-sky-500 rounded-lg">
                 <div className="relative mb-8">
-                <p className="text-3xl text-cyan-400">Formations</p>
+                <p className="text-3xl text-cyan-400">Qualifications</p>
                 <img className="absolute top-0 right-0 w-16 h-16" src={diplome} />
                 </div>
                 <hr className="w-full border-blue-500" /><br></br>
@@ -48,7 +48,7 @@ function Formationeng() {
             </div>
             <div className="relative  sm:max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto mt-8 p-4 sm:p-6 bg-zinc-200 border-4 border-sky-300 shadow-2xl shadow-sky-500 rounded-lg">
                 <div className="relative mb-8">
-                <p className="text-3xl text-cyan-400">Expériences</p>
+                <p className="text-3xl text-cyan-400">Experiences</p>
                 <img className="absolute top-0 right-0 w-16 h-16" src={entreprise} />
                 </div>
                 <hr className="w-full border-blue-500" /><br></br>
