@@ -1,7 +1,7 @@
 export default function Footereng(){
     return(
-      <footer className="footer items-center p-4  absolute bottom-0  text-neutral-content bg-gradient-to-b from-[#5560AF,0.5] to-[#363883,0.7] rounded-[20px] border-[12px] border-[#B6BABD] shadow-[0_0_5px_0_rgba(10,10,0,0.5)] bg-blue-600/50  " style={{"borderStyle":"ridge", "textShadow":"2px 2px 2px black"}}>
-      <div className="items-center grid-flow-col">
+        <footer className="footer items-center p-4 bg-navfulljdr absolute bottom-0  text-neutral-content">
+        <div className="items-center grid-flow-col">
           <p>Do not hesitate to contact me if you need more information ! </p>
         </div> 
         <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">

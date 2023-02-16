@@ -8,3 +8,28 @@
   .jv{
     font-family: PressStart2PRegular
   }
+
+  .bg-responsive1jv {
+    background-image: url('../img/indexbgjv.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+  }
+
+  .bg-responsive2jv {
+    background-image: url('../img/biobgjv.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+  }
+
+  .bg-responsive3jv {
+    background-image: url('../img/compbgjv.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+  }
+
+
+
+
