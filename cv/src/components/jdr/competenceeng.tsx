@@ -31,11 +31,11 @@ import Navbar from "./navbareng";
 function CompetenceJDReng() {
   
     return (
-      <div className="flex items-center flex-wrap  justify-start h-screen bg-cover bg-center  bg-responsivejdr jdr bg-repeat sm:bg-auto md:bg-cover lg:bg-contain overflow-x-auto">
+      <div className="flex items-center flex-wrap pt-16  justify-start h-screen bg-cover bg-center  bg-responsivejdr jdr bg-repeat sm:bg-auto md:bg-cover lg:bg-contain overflow-x-auto">
         <Navbar image={perso} ></Navbar><br></br><br></br>
       <div className="relative bg-boxjdr   sm:max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto mt-16 p-4 sm:p-6 rounded-lg">
           <div className="relative mb-8">
-            <p className="text-3xl text-red-500 pt-8">Général</p>
+            <p className="text-3xl text-red-500 pt-8">General</p>
             <img className="absolute top-5 right-0 w-16 h-16" src={skill} />
           </div>
           <hr className="w-full border-blue-500" /><br></br>
@@ -66,7 +66,7 @@ function CompetenceJDReng() {
         </div>
         <div className="relative bg-boxjdr  sm:max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto mt-8 p-4 sm:p-6 rounded-lg">
           <div className="relative mb-8">
-            <p className="text-3xl text-red-500 pt-16">Languages informatiques</p>
+            <p className="text-3xl text-red-500 pt-16">Computer languages</p>
             <img className="absolute top-12 right-0 w-16 h-16" src={lang} />
           </div>
           <hr className="w-full border-blue-500" /><br></br>

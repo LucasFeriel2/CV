@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import perso from "../img/normal.png"
+import perso from "../img/alliance.png"
 import apropos from "../img/apropos.png"
-import skill from "../img/skill.png"
+import skill from "../img/skilljv.png"
 import reseau from "../img/reseau.png"
 import ecrit from "../img/ecrit.png"
 import domo from "../img/domo.png"
 import atom from "../img/atom.png"
 import eng from "../img/eng.png"
 import esp from "../img/esp.png"
-import lang from "../img/lang.png"
+import lang from "../img/xpjv.png"
 import html from "../img/html.png"
 import css from "../img/css.png"
 import js from "../img/js.png"
@@ -22,106 +22,131 @@ import bs from "../img/bootstrap.png"
 import c from "../img/c.png"
 import batch from "../img/batch.png"
 import power from "../img/power.png"
+import Navbar from "./navbar";
+import barre from "../img/barjv.png"
+
 
 
 function CompetenceJVeng() {
   
     return (
-      <div className='absolute left-0 top-0 w-full h-full overflow-x-auto bg-black  '>
-        <div className="h-[1085px] w-[500px] bg-blue-600/50">
-          <img className="absolute top-[100px] left-[150px] w-[188px] h-[183px]" src={perso}></img>
-          <p className="absolute top-[300px] left-[120px] text-5xl text-white ">Lucas FERIEL</p>
-          <Link to="/eng"><p className="absolute top-[420px] left-[100px] text-3xl text-white ">Home</p></Link>
-          <Link to="/bio/eng"><p className="absolute top-[520px] left-[100px] text-3xl text-white ">Bio</p></Link>
-          <Link to="/competence/eng"><p className="absolute top-[620px] left-[100px] text-3xl text-white ">Skills</p></Link>
-          <Link to="/experience/eng"><p className="absolute top-[700px] left-[100px] text-3xl text-white ">Qualifications &<br></br> experiences</p></Link>
-          {/* <Link to="/portfolio/eng"><p className="absolute top-[850px] left-[100px] text-3xl text-white ">Portfolio</p></Link> */}
-          <Link to="/competence"><p className="absolute top-[1000px] left-[160px] text-xl text-white ">French version</p></Link>
-      </div>
-        <div className="absolute left-[550px] top-[120px] w-[400px] h-[850px] border-4  shadow-2xl pl-4 pr-6 rounded-lg bg-zinc-200 border-sky-300 shadow-sky-500">
-            <p className="text-3xl text-cyan-400 absolute top-[15px]">General</p>
-            <img className="absolute top-[4px] left-[320px] w-[69px] h-[69px]" src={skill}></img>
-            <hr className=" w-full border-blue-500 absolute top-[80px] left-0"></hr>
-            <img className="absolute top-[100px] left-[10px] w-[90px] h-[90px]" src={reseau}></img>
-            <p className="absolute top-[120px] left-[130px] text-2xl">Network Knowledge</p>
-            <img className="absolute top-[210px] left-[10px] w-[90px] h-[90px]" src={ecrit}></img>
-            <p className="absolute top-[230px] left-[130px] text-2xl">Good written communication</p>
-            <img className="absolute top-[340px] left-[10px] w-[90px] h-[90px]" src={domo}></img>
-            <p className="absolute top-[360px] left-[130px] text-2xl">Home domotics knowledge</p>
-            <img className="absolute top-[460px] left-[10px] w-[90px] h-[90px]" src={atom}></img>
-            <p className="absolute top-[490px] left-[130px] text-2xl">CAutomastism knowledge</p>
-            <img className="absolute top-[600px] left-[10px] w-[90px] h-[90px]" src={eng}></img>
-            <p className="absolute top-[610px] left-[130px] text-2xl">English level B1 & <br></br>  TOEIC : 675 points</p>
-            <img className="absolute top-[730px] left-[10px] w-[90px] h-[90px]" src={esp}></img>
-            <p className="absolute top-[750px] left-[130px] text-2xl">Spanish level B1</p>
-        </div>
-        <div className="absolute left-[1000px] top-[120px] w-[840px] h-[850px] border-4  shadow-2xl pl-4 pr-6 rounded-lg bg-zinc-200 border-sky-300 shadow-sky-500">
-            <p className="text-3xl text-cyan-400 absolute top-[15px]">Computer languages</p>
-            <img className="absolute top-[4px] right-[10px] w-[69px] h-[69px]" src={lang}></img>
-            <hr className=" w-full border-blue-500 absolute top-[80px] left-0"></hr>
-            <img className="absolute top-[100px] left-[15px] w-[90px] h-[90px]" src={html}></img>
-            <p className="absolute top-[100px] left-[220px] text-2xl">HTML</p>
-            <div className="absolute top-[130px] left-[130px] w-[250px] bg-gray-500 shadow  bg-grey-light mt-2">
-              <div className=" bg-blue text-xs leading-none py-1 text-center bg-blue-500 text-white" style={{"width" : "85%"}}>85%</div>
+      <div className="flex items-center flex-wrap  justify-start h-screen bg-cover bg-center  bg-responsive3jv jv bg-repeat sm:bg-auto md:bg-cover lg:bg-contain overflow-x-auto">
+      <Navbar image={perso}></Navbar><br></br><br></br>
+      <div className="relative  border-x-4 border-t-4 bg-zinc-200/80 border-black  mt-12  shadow-2xl  sm:max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto p-4 sm:p-6  rounded-lg">
+          <div className="relative mb-8">
+            <p className="text-2xl text-red-500 pt-4">General</p>
+            <img className="absolute top-0 right-0 w-16 h-16" src={skill} />
+          </div>
+          <hr className="w-full border-blue-500" /><br></br>
+          <div className="flex flex-row  items-center mb-6">
+              <img className="w-16 h-16 mr-6" src={reseau} />
+              <p className="text-lg">Network knowledge</p>
             </div>
-            <img className="absolute top-[210px] left-[15px] w-[90px] h-[90px]" src={css}></img>
-            <p className="absolute top-[210px] left-[220px] text-2xl">CSS</p>
-            <div className="absolute top-[240px] left-[130px] w-[250px] bg-gray-500 shadow  bg-grey-light mt-2">
-              <div className=" bg-blue text-xs leading-none py-1 text-center bg-blue-500 text-white" style={{"width" : "80%"}}>80%</div>
+            <div className="flex flex-row  items-center mb-6">
+              <img className="w-16 h-16 mr-6" src={ecrit} />
+              <p className="text-xl">Good written communication</p>
             </div>
-            <img className="absolute top-[340px] left-[15px] w-[90px] h-[90px]" src={js}></img>
-            <p className="absolute top-[340px] left-[200px] text-2xl">JavaScript</p>
-            <div className="absolute top-[370px] left-[130px] w-[250px] bg-gray-500 shadow  bg-grey-light mt-2">
-              <div className=" bg-blue text-xs leading-none py-1 text-center bg-blue-500 text-white" style={{"width" : "75%"}}>75%</div>
+            <div className="flex  flex-row items-center mb-6">
+              <img className="w-16 h-16 mr-6" src={domo} />
+              <p className="text-xl">Knowledge in domotics</p>
             </div>
-            <img className="absolute top-[460px] left-[15px] w-[90px] h-[90px]" src={php}></img>
-            <p className="absolute top-[455px] left-[220px] text-2xl">PHP</p>
-            <div className="absolute top-[485px] left-[130px] w-[250px] bg-gray-500 shadow  bg-grey-light mt-2">
-              <div className=" bg-blue text-xs leading-none py-1 text-center bg-blue-500 text-white" style={{"width" : "90%"}}>90%</div>
+            <div className="flex flex-row items-center mb-6">
+              <img className="w-16 h-16 mr-6" src={atom} />
+              <p className="text-xl"> Automastism knowledge</p>
             </div>
-            <img className="absolute top-[580px] left-[15px] w-[90px] h-[90px]" src={sql}></img>
-            <p className="absolute top-[580px] left-[220px] text-2xl">SQL</p>
-            <div className="absolute top-[610px] left-[130px] w-[250px] bg-gray-500 shadow  bg-grey-light mt-2">
-              <div className=" bg-blue text-xs leading-none py-1 text-center bg-blue-500 text-white" style={{"width" : "80%"}}>80%</div>
+            <div className="flex flex-row items-center mb-6">
+              <img className="w-16 h-16 mr-6" src={eng} />
+              <p className="text-xl">English level B1 &<br></br>TOEIC : 675 points</p>
             </div>
-            <img className="absolute top-[710px] left-[15px] w-[90px] h-[90px]" src={symf}></img>
-            <p className="absolute top-[700px] left-[200px] text-2xl">Symfony</p>
-            <div className="absolute top-[730px] left-[130px] w-[250px] bg-gray-500 shadow  bg-grey-light mt-2">
-              <div className=" bg-blue text-xs leading-none py-1 text-center bg-blue-500 text-white" style={{"width" : "40%"}}>40%</div>
+            <div className="flex flex-row items-center mb-6">
+              <img className="w-16 h-16 mr-6" src={esp} />
+              <p className="text-xl">Spanish level B1</p>
             </div>
+            <img className="absolute lg:-bottom-[70px] -bottom-[40px] left-[0px] w-full " src={barre}></img>
 
-            <img className="absolute top-[100px] left-[450px] w-[90px] h-[90px]" src={react}></img>
-            <p className="absolute top-[100px] left-[655px] text-2xl">React</p>
-            <div className="absolute top-[130px] left-[566px] w-[250px] bg-gray-500 shadow  bg-grey-light mt-2">
-              <div className=" bg-blue text-xs leading-none py-1 text-center bg-blue-500 text-white" style={{"width" : "90%"}}>90%</div>
-            </div>
-            <img className="absolute top-[210px] left-[450px] w-[90px] h-[90px]" src={tw}></img>
-            <p className="absolute top-[210px] left-[635px] text-2xl">Tailwind</p>
-            <div className="absolute top-[240px] left-[566px] w-[250px] bg-gray-500 shadow  bg-grey-light mt-2">
-              <div className=" bg-blue text-xs leading-none py-1 text-center bg-blue-500 text-white" style={{"width" : "80%"}}>80%</div>
-            </div>
-            <img className="absolute top-[340px] left-[450px] w-[90px] h-[90px]" src={bs}></img>
-            <p className="absolute top-[340px] left-[635px] text-2xl">BootStrap</p>
-            <div className="absolute top-[370px] left-[566px] w-[250px] bg-gray-500 shadow  bg-grey-light mt-2">
-              <div className=" bg-blue text-xs leading-none py-1 text-center bg-blue-500 text-white" style={{"width" : "45%"}}>45%</div>
-            </div>
-            <img className="absolute top-[460px] left-[450px] w-[90px] h-[90px]" src={c}></img>
-            <p className="absolute top-[455px] left-[655px] text-2xl">C#</p>
-            <div className="absolute top-[485px] left-[566px] w-[250px] bg-gray-500 shadow  bg-grey-light mt-2">
-              <div className=" bg-blue text-xs leading-none py-1 text-center bg-blue-500 text-white" style={{"width" : "50%"}}>50%</div>
-            </div>
-            <img className="absolute top-[580px] left-[450px] w-[90px] h-[90px]" src={batch}></img>
-            <p className="absolute top-[580px] left-[655px] text-2xl">Batch</p>
-            <div className="absolute top-[610px] left-[566px] w-[250px] bg-gray-500 shadow  bg-grey-light mt-2">
-              <div className=" bg-blue text-xs leading-none py-1 text-center bg-blue-500 text-white" style={{"width" : "60%"}}>60%</div>
-            </div>
-            <img className="absolute top-[710px] left-[450px] w-[90px] h-[90px]" src={power}></img>
-            <p className="absolute top-[700px] left-[635px] text-2xl">Powershell</p>
-            <div className="absolute top-[730px] left-[566px] w-[250px] bg-gray-500 shadow  bg-grey-light mt-2">
-              <div className=" bg-blue text-xs leading-none py-1 text-center bg-blue-500 text-white" style={{"width" : "60%"}}>60%</div>
-            </div>
         </div>
-      </div>
+        <div className="relative  border-x-4 border-t-4 bg-zinc-200/80 border-black  mt-12  shadow-2xl  sm:max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto p-4 sm:p-6  rounded-lg">
+          <div className="relative mb-8">
+            <p className="text-2xl text-red-500 pt-4">Computer <br></br>  languages</p>
+            <img className="absolute top-0 right-0 w-16 h-16" src={lang} />
+          </div>
+          <hr className="w-full border-blue-500" /><br></br>
+            <div className="flex  lg:space-x-10 space-x-3  items-center mb-6">
+              <img className="w-16 h-16 mr-6" src={html} />
+              <div className="indicator"> 
+                <span className="indicator-item indicator-center badge badge-secondary text-xs  bg-red">HTML</span> 
+                <div className="radial-progress bg-primary text-primary-content border-4 border-primary" style={{"--value":75}}>75%</div>              
+              </div>
+              <img className="w-16 h-16 mr-6" src={react} />
+                <div className="indicator"> 
+                  <span className="indicator-item indicator-center badge badge-secondary text-xs  bg-red">ReactJS</span> 
+                  <div className="radial-progress bg-primary text-primary-content border-4 border-primary" style={{"--value":90}}>90%</div>              
+                </div>
+            </div>
+            <div className="flex lg:space-x-10 space-x-3  items-center mb-6">
+              <img className="w-16 h-16 mr-6" src={css} />
+              <div className="indicator"> 
+                <span className="indicator-item indicator-center badge badge-secondary text-xs  bg-red">CSS</span> 
+                <div className="radial-progress bg-primary text-primary-content border-4 border-primary" style={{"--value":80}}>80%</div>              
+              </div>
+              <img className="w-16 h-16 mr-6" src={tw} />
+                <div className="indicator"> 
+                  <span className="indicator-item indicator-center badge badge-secondary text-xs  bg-red">Tailwind</span> 
+                  <div className="radial-progress bg-primary text-primary-content border-4 border-primary" style={{"--value":80}}>80%</div>              
+                </div>
+            </div>
+            <div className="flex lg:space-x-10 space-x-3 items-center mb-6">
+              <img className="w-16 h-16 mr-6" src={js} />
+              <div className="indicator"> 
+                <span className="indicator-item indicator-center badge badge-secondary text-xs  bg-red">JavaScript</span> 
+                <div className="radial-progress bg-primary text-primary-content border-4 border-primary" style={{"--value":70}}>70%</div>              
+              </div>
+              <img className="w-16 h-16 mr-6" src={bs} />
+                <div className="indicator"> 
+                  <span className="indicator-item indicator-center badge badge-secondary text-xs  bg-red">BootStrap</span> 
+                  <div className="radial-progress bg-primary text-primary-content border-4 border-primary" style={{"--value":40}}>40%</div>              
+                </div>
+            </div>
+            <div className="flex lg:space-x-10 space-x-3 items-center mb-6">
+              <img className="w-16 h-16 mr-6" src={php} />
+              <div className="indicator"> 
+                <span className="indicator-item indicator-center badge badge-secondary text-xs  bg-red">PHP</span> 
+                <div className="radial-progress bg-primary text-primary-content border-4 border-primary" style={{"--value":85}}>85%</div>              
+              </div>
+              <img className="w-16 h-16 mr-6" src={c} />
+                <div className="indicator"> 
+                  <span className="indicator-item indicator-center badge badge-secondary text-xs  bg-red">C#</span> 
+                  <div className="radial-progress bg-primary text-primary-content border-4 border-primary" style={{"--value":60}}>60%</div>              
+                </div>
+            </div>
+            <div className="flex lg:space-x-10 space-x-3  items-center mb-6">
+              <img className="w-16 h-16 mr-6" src={sql} />
+              <div className="indicator"> 
+                <span className="indicator-item indicator-center badge badge-secondary text-xs  bg-red">SQL</span> 
+                <div className="radial-progress bg-primary text-primary-content border-4 border-primary" style={{"--value":90}}>85%</div>              
+              </div>
+              <img className="w-16 h-16 mr-6" src={batch} />
+                <div className="indicator"> 
+                  <span className="indicator-item indicator-center badge badge-secondary text-xs  bg-red">Batch</span> 
+                  <div className="radial-progress bg-primary text-primary-content border-4 border-primary" style={{"--value":65}}>65%</div>              
+                </div>
+            </div>
+              <div className="flex lg:space-x-10 space-x-3 items-center mb-6">
+                <img className="w-16 h-16 mr-6" src={symf} />
+                <div className="indicator"> 
+                  <span className="indicator-item indicator-center badge badge-secondary text-xs  bg-red">Symfony</span> 
+                  <div className="radial-progress bg-primary text-primary-content border-4 border-primary" style={{"--value":40}}>40%</div>              
+                </div>
+                <img className="w-16 h-16 mr-6" src={power} />
+                <div className="indicator"> 
+                  <span className="indicator-item indicator-center badge badge-secondary text-[8px]  bg-red">Powershell</span> 
+                  <div className="radial-progress bg-primary text-primary-content border-4 border-primary" style={{"--value":65}}>65%</div>              
+                </div>
+            </div>        
+            <img className="absolute lg:-bottom-[52px] -bottom-[40px] left-[0px] w-full " src={barre}></img>
+    
+        </div>
+    </div>
 
       
     );

@@ -50,7 +50,7 @@ function Competenceeng() {
             </div>
             <div className="flex flex-row items-center mb-6">
               <img className="w-16 h-16 mr-6" src={atom} />
-              <p className="text-xl"> in automation</p>
+              <p className="text-xl">Automastism knowledge</p>
             </div>
             <div className="flex flex-row items-center mb-6">
               <img className="w-16 h-16 mr-6" src={eng} />

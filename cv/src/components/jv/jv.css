@@ -30,6 +30,12 @@
     background-repeat: repeat;
   }
 
+  .bg-responsive4jv {
+    background-image: url('../img/forbgjv.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+  }
 
 
-
+  

@@ -21,6 +21,8 @@ import BioJV from "./components/jv/bio.tsx";
 import BioJVeng from "./components/jv/bioeng.tsx";
 import CompetenceJV from "./components/jv/competence.tsx";
 import CompetenceJVeng from "./components/jv/competenceeng.tsx";
+import FormationJV from "./components/jv/formation.tsx";
+import FormationJVeng from "./components/jv/formationeng.tsx";
 
 export default function App() {
   return (
@@ -49,6 +51,8 @@ export default function App() {
           <Route path="bio/jv/eng" element={<BioJVeng />} />
           <Route path="competence/jv/" element={<CompetenceJV />} />
           <Route path="competence/jv/eng" element={<CompetenceJVeng />} />
+          <Route path="experience/jv" element={<FormationJV />} />
+          <Route path="experience/jv/eng" element={<FormationJVeng />} />
 
         </Routes>
   </Router>

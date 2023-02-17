@@ -2,14 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import perso from "../img/alliance.png"
 import apropos from "../img/apropos.png"
-import skill from "../img/skill.png"
+import skill from "../img/skilljv.png"
 import reseau from "../img/reseau.png"
 import ecrit from "../img/ecrit.png"
 import domo from "../img/domo.png"
 import atom from "../img/atom.png"
 import eng from "../img/eng.png"
 import esp from "../img/esp.png"
-import lang from "../img/lang.png"
+import lang from "../img/xpjv.png"
 import html from "../img/html.png"
 import css from "../img/css.png"
 import js from "../img/js.png"
@@ -29,9 +29,9 @@ import barre from "../img/barjv.png"
 function CompetenceJV() {
   
     return (
-      <div className="flex items-center flex-wrap  justify-start h-screen bg-cover bg-center  bg-responsive3jv jv bg-repeat sm:bg-auto md:bg-cover lg:bg-contain overflow-x-auto">
+      <div className="flex items-center flex-wrap pt-16  justify-start h-screen bg-cover bg-center  bg-responsive3jv jv bg-repeat sm:bg-auto md:bg-cover lg:bg-contain overflow-x-auto">
         <Navbar image={perso}></Navbar><br></br><br></br>
-        <div className="relative  border-4 bg-zinc-200/80 border-yellow-400 shadow-[0_0_5px_0_rgba(10,10,0,0.5)]   top-0  text-white  mt-12    sm:max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto p-4 sm:p-6  rounded-lg" style={{"borderStyle":"ridge", "textShadow":"2px 2px 2px black"}}>
+        <div className="relative  border-x-4 border-t-4 bg-zinc-200/80 border-black  mt-12  shadow-2xl  sm:max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto p-4 sm:p-6  rounded-lg">
             <div className="relative mb-8">
               <p className="text-2xl text-red-500 pt-4">Général</p>
               <img className="absolute top-0 right-0 w-16 h-16" src={skill} />
@@ -61,9 +61,10 @@ function CompetenceJV() {
                 <img className="w-16 h-16 mr-6" src={esp} />
                 <p className="text-xl">Espagnol niveau B1</p>
               </div>
+              <img className="absolute lg:-bottom-[70px] -bottom-[40px] left-[0px] w-full " src={barre}></img>
 
           </div>
-          <div className="relative  border-4 bg-zinc-200/80 border-yellow-400 shadow-[0_0_5px_0_rgba(10,10,0,0.5)]   top-0  text-white  mt-12    sm:max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto p-4 sm:p-6  rounded-lg" style={{"borderStyle":"ridge", "textShadow":"2px 2px 2px black"}}>
+          <div className="relative  border-x-4 border-t-4 bg-zinc-200/80 border-black  mt-12   shadow-2xl  sm:max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto p-4 sm:p-6  rounded-lg">
             <div className="relative mb-8">
               <p className="text-2xl text-red-500 pt-4">Languages <br></br> informatiques</p>
               <img className="absolute top-0 right-0 w-16 h-16" src={lang} />
@@ -140,7 +141,9 @@ function CompetenceJV() {
                     <span className="indicator-item indicator-center badge badge-secondary text-[8px]  bg-red">Powershell</span> 
                     <div className="radial-progress bg-primary text-primary-content border-4 border-primary" style={{"--value":65}}>65%</div>              
                   </div>
-              </div>              
+              </div>        
+              <img className="absolute lg:-bottom-[52px] -bottom-[40px] left-[0px] w-full " src={barre}></img>
+      
           </div>
       </div>
 
